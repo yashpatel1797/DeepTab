@@ -1,5 +1,5 @@
 import React from 'react'
-import { Weather, Time, Focus, GoogleSearch } from '../../components';
+import { Weather, Time, Focus, GoogleSearch, Quote, Todo } from '../../components';
 
 const Homepage = () => {
     return (
@@ -9,6 +9,10 @@ const Homepage = () => {
                 <Time />
                 <Focus />
                 <GoogleSearch />
+            </div>
+            <div className='flex justify-between'>
+                <Quote />
+                <Todo />
             </div>
         </div>
     )
