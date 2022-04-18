@@ -7,7 +7,6 @@ const todoReducer = (state, { type, payload }) => {
         case "TODO_STATUS":
             return { ...state, todoList: state.todoList.map(item => payload.id === item.id ? { ...item, isComplete: !item.isComplete } : item) }
         case "TODO_DELETE":
-            console.log("res");
             return { ...state, todoList: state.todoList.filter(item => item.id !== payload) }
         default:
             return state;
